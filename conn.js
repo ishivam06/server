@@ -10,7 +10,7 @@ const connectDB = async() => {
 			useUnifiedTopology: true,
 		});
 
-		console.log(`MongoDB Connected: ${conn.connection.host}`.cyan.underline);
+		console.log(`MongoDB Connected: ${conn.connection.host}`);
 	} catch(error) {
 		console.log(`error: ${error.message}`);
 		// console.log(error);
